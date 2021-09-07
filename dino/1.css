@@ -1,0 +1,8 @@
+body{
+    width: auto;
+    height: 500px;
+    background-color:wheat;
+}
+.background{
+    justify-content: center;
+}

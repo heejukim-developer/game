@@ -8,15 +8,18 @@ canvas.height =window.innerHeight-100;
 // ctx.fillStyle = 'green';
 // ctx.fillRect(10,10,100,100); 
 
+
+
+
 var image1 = new Image();
-image1.src = 'dino.png';
+image1.src = 'rabbit.png';
 
 // 공룡그리기 object자료에 정리해두기
 var dino ={
-    x:10,
-    y:200,
-    width :50,
-    height: 50,
+    x:50,
+    y:400,
+    width :70,
+    height: 70,
     draw(){
         ctx.fillStyle = 'green';
         // ctx.fillRect(this.x,this.y,this.width,this.height); 
@@ -30,9 +33,9 @@ image2.src = 'cactus.png';
 class Cactus{
     constructor(){
         this.x = 500;
-        this.y = 200;
-        this.width= 50;
-        this.height= 50;
+        this.y = 420;
+        this.width= 70;
+        this.height= 70;
     }
     draw(){
         ctx.fillStyle = 'red';
@@ -43,6 +46,9 @@ class Cactus{
 }
 var cactus = new Cactus ();
 cactus.draw();
+
+
+
 
 var timer = 0;
 var cactus여러개 =[];
@@ -84,7 +90,7 @@ function 프레임마다실행할거(){
         점프timer++;
     }
      if (점프중 == false){
-         if (dino.y <200){
+         if (dino.y <400){
             dino.y+=2;
          }
          
