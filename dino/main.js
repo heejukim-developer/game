@@ -2,7 +2,7 @@ var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 //  네모그리기
 canvas.width=window.innerWidth -100;
-canvas.height =window.innerHeight-100;
+canvas.height =window.innerHeight-10;
 
 // 10,10위치에서 100x100 의 사각형 만들어달라 
 // ctx.fillStyle = 'green';
@@ -12,14 +12,14 @@ canvas.height =window.innerHeight-100;
 
 
 var image1 = new Image();
-image1.src = 'rabbit.png';
+image1.src = 'rabbit2.png';
 
 // 공룡그리기 object자료에 정리해두기
 var dino ={
-    x:50,
+    x:20,
     y:400,
-    width :70,
-    height: 70,
+    width :90,
+    height: 90,
     draw(){
         ctx.fillStyle = 'green';
         // ctx.fillRect(this.x,this.y,this.width,this.height); 
@@ -33,9 +33,9 @@ image2.src = 'cactus.png';
 class Cactus{
     constructor(){
         this.x = 500;
-        this.y = 420;
-        this.width= 70;
-        this.height= 70;
+        this.y = 410;
+        this.width= 100;
+        this.height= 100;
     }
     draw(){
         ctx.fillStyle = 'red';
@@ -64,7 +64,7 @@ function 프레임마다실행할거(){
     ctx.clearRect(0,0, canvas.width, canvas.height);
    
     // 120은 컴퓨터가 1초에 반응하는것 , 1초에 한번 이동해달라는 코드
-    if (timer % 200 === 0){
+    if (timer % 300 === 0){
     var cactus = new Cactus ();
     cactus여러개.push(cactus);
     
