@@ -25,6 +25,7 @@ var ctx = canvas.getContext('2d');
 canvas.width=window.innerWidth -100;
 canvas.height =window.innerHeight-10;
 
+// 
 // 10,10위치에서 100x100 의 사각형 만들어달라 
 // ctx.fillStyle = 'green';
 // ctx.fillRect(10,10,100,100); 
@@ -47,7 +48,7 @@ var dino ={
         ctx.drawImage(image1, this.x, this.y)
     }
 }
-
+// 선인장
 var image2 = new Image();
 image2.src = 'cactus.png';
 
@@ -68,7 +69,27 @@ class Cactus{
 var cactus = new Cactus ();
 cactus.draw();
 
+// 배경
+// var background = document.querySelector('background');
 
+var image3 = new Image();
+image3.src = 'desert2.png';
+
+// class Background {
+//     constructor(){
+//         this.x = 0;
+//         this.y = 0;
+//         this.width= 2400;
+//         this.height= 500;
+//     }
+//     draw(){
+//         ctx.fillStyle = 'green';
+//         // ctx.fillRect(this.x,this.y,this.width,this.height); 
+//         ctx.drawImage(image3, this.x, this.y)
+//     }
+// }
+// var background = new Background ();
+// background.draw();
 
 
 var timer = 0;
@@ -143,3 +164,4 @@ document.addEventListener('keydown', function(e){
      점프중 = true;
     }
 })
+
