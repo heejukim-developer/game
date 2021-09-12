@@ -39,7 +39,7 @@ image1.src = 'rabbit2.png';
 // 공룡그리기 object자료에 정리해두기
 var dino ={
     x:20,
-    y:400,
+    y:300,
     width :90,
     height: 90,
     draw(){
@@ -54,8 +54,8 @@ image2.src = 'cactus.png';
 
 class Cactus{
     constructor(){
-        this.x = 500;
-        this.y = 410;
+        this.x = 600;
+        this.y = 290;
         this.width= 100;
         this.height= 100;
     }
@@ -132,7 +132,7 @@ function 프레임마다실행할거(){
         점프timer++;
     }
      if (점프중 == false){
-         if (dino.y <400){
+         if (dino.y <300){
             dino.y+=2;
          }
          
