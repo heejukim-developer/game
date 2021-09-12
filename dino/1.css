@@ -5,11 +5,12 @@ body{
     font-family: 'Press Start 2P', cursive;
 }
 .background{
-    width: auto; height: 800px;
-    justify-content: center;
-    margin-top: -500px;
+    width: auto; height: 500px;
+  
+    margin-top: -400px;
     margin-left: -10px;
-    background: url('./desert2.png') 0 center / 1500px repeat-x;
+    
+    background: url('./desert2.png') 1000px repeat-x;
     animation: movebg 2s linear infinite;
 
 }
